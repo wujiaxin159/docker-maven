@@ -1,0 +1,9 @@
+stages:
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: suite-cloud/suite-cloud-maven
+timeout: 60
+notification: {}
