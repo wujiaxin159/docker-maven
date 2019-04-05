@@ -5,5 +5,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: suite-cloud/suite-cloud-maven
+      pushRemote: true
+      registry: 127.0.0.1:34770
 timeout: 60
 notification: {}
