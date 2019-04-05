@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: suite-cloud/suite-cloud-maven
       pushRemote: true
-      registry: 10.0.0.205:5000
+      registry: http://10.0.0.205:5000
 timeout: 60
 notification: {}
