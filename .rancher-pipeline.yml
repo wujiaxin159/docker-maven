@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: wujiaxin159/suite-cloud-maven
       pushRemote: true
-      registry: 10.0.0.208:5000
+      registry: 127.0.0.1:34889
 timeout: 60
 notification: {}
