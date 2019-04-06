@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: wujiaxin159/suite-cloud-maven
+      tag: suite-cloud-maven
       pushRemote: true
       registry: 10.0.0.203:5000
 timeout: 60
