@@ -7,5 +7,5 @@ stages:
       tag: suite-cloud-maven
       pushRemote: true
       registry: 10.0.0.203:5000
-timeout: 60
+timeout: 10
 notification: {}
