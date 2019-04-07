@@ -6,6 +6,6 @@ stages:
       buildContext: .
       tag: suite-cloud-maven
       pushRemote: true
-      registry: docker.domain.cn:5000
+      registry: 127.0.0.1:34219
 timeout: 60
 notification: {}
