@@ -15,8 +15,9 @@ ARG BASE_URL=http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/${MAVEN_VE
 #   && rm -f /tmp/apache-maven.tar.gz \
 #   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
+COPY apache-maven-${MAVEN_VERSION}-bin.tar.gz /tmp/apache-maven.tar.gz
+
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
-  && mv apache-maven-${MAVEN_VERSION}-bin.tar.gz /tmp/apache-maven.tar.gz \
   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c - \
   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1 \
   && rm -f /tmp/apache-maven.tar.gz \
