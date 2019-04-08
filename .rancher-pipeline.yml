@@ -10,5 +10,5 @@ stages:
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
-timeout: 10
+timeout: 60
 notification: {}
